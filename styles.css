@@ -1,0 +1,122 @@
+
+.periodic-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%; 
+}
+
+.heading{
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+}
+
+.element {
+  flex: auto;
+  width: 70px; 
+  height: 70px; 
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.empty {
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  border: 0px;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 0.60em;
+  margin-left: 5px;
+  margin-top: 10px;
+  align-self: self-start;
+}
+
+.symbol {
+  font-size: 1.5em;
+}
+
+.name {
+  font-size: 0.7em;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 2560px) {
+  
+  .element {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  
+  .element {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .heading{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+  }
+  
+  .element {
+    width: 50px;
+    height: 50px;
+  }
+  .number {
+    font-size: 0.5em;
+    margin-top: 1px;
+  }
+  .symbol {
+    font-size: 0.85em;
+  }
+  .name {
+    font-size: 0.5em;
+    margin-bottom: 5px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .heading{
+    display: none;
+  }
+  
+  .periodic-table{
+    display: none;
+  }
+
+
+  body {
+    background-image: url('https://www.periodictable.co.za/media/periodic-table/periodic-table-bw-download.png'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+  }
+
+  
+}
